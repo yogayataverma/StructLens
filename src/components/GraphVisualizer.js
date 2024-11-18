@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 
 const GraphVisualizer = () => {
   const [nodes, setNodes] = useState([]);
@@ -65,7 +65,7 @@ const GraphVisualizer = () => {
           <input
             type="text"
             value={inputValue}
-            style={{border:"2px solid #3b82f6", borderRadius:"5px", marginRight:"10px" , borderRadius:"20px"}}
+            style={{border:"2px solid #3b82f6", marginRight:"10px" , borderRadius:"20px"}}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={(e) => handleKeyPress(e, addNode)}
             className="border rounded px-3 py-2 w-40 text-center"
@@ -84,7 +84,7 @@ const GraphVisualizer = () => {
           <input
             type="text"
             value={edgeInput}
-            style={{border:"2px solid #3b82f6", borderRadius:"5px", marginRight:"10px", borderRadius:"20px"}}
+            style={{border:"2px solid #3b82f6", marginRight:"10px", borderRadius:"20px"}}
             onChange={(e) => setEdgeInput(e.target.value)}
             onKeyPress={(e) => handleKeyPress(e, addEdge)}
             className="border rounded px-3 py-2 w-40 text-center"
