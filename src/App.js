@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ArrayVisualizer from './components/ArrayVisualizer';
 import LinkedListVisualizer from './components/LinkedListVisualizer';
 import StackVisualizer from './components/StackVisualizer';
