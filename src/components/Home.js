@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import './Home.css';
 
 const Home = () => {
   const links = [
-    { name: "Array Visualizer", path: "https://structlens.netlify.app/array" },
-    { name: "Linkedlist Visualizer", path: "https://structlens.netlify.app/linkedlist" },
-    { name: "Stack Visualizer", path: "https://structlens.netlify.app/stack" },
-    { name: "Queue Visualizer", path: "https://structlens.netlify.app/queue" },
-    { name: "Tree Visualizer", path: "https://structlens.netlify.app/tree" },
-    { name: "Graph Visualizer", path: "https://structlens.netlify.app/graph" },
+    { name: "Array Visualizer", path: "/array" },
+    { name: "Linkedlist Visualizer", path: "/linkedlist" },
+    { name: "Stack Visualizer", path: "/stack" },
+    { name: "Queue Visualizer", path: "/queue" },
+    { name: "Tree Visualizer", path: "/tree" },
+    { name: "Graph Visualizer", path: "/graph" },
   ];
 
   return (
@@ -17,9 +18,9 @@ const Home = () => {
       <ul className="link-list">
         {links.map((link, index) => (
           <li key={index} className="link-item">
-            <a href={link.path} className="link">
+            <Link to={link.path} className="link">  {/* Use Link here */}
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
