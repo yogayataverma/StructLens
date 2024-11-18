@@ -165,6 +165,7 @@ const BinaryTreeVisualizer = () => {
   const [lastInserted, setLastInserted] = useState(null);
   const [updateTrigger, setUpdateTrigger] = useState(0);
   const [traversalResult, setTraversalResult] = useState([]);
+  console.log(updateTrigger);
 
   const handleInsert = () => {
     const value = parseInt(inputValue);
