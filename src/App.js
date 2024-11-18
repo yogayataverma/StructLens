@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ArrayVisualizer from './components/ArrayVisualizer';
+import LinkedListVisualizer from './components/LinkedListVisualizer';
+import StackVisualizer from './components/StackVisualizer';
+import QueueVisualizer from './components/QueueVisualizer';
+import TreeVisualizer from './components/TreeVisualizer';
+import GraphVisualizer from './components/GraphVisualizer';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/array" element={<ArrayVisualizer />} />
+          <Route path="/linkedlist" element={<LinkedListVisualizer />} />
+          <Route path="/stack" element={<StackVisualizer />} />
+          <Route path="/queue" element={<QueueVisualizer />} />
+          <Route path="/tree" element={<TreeVisualizer />} />
+          <Route path="/graph" element={<GraphVisualizer />} />
+        </Routes>
+    </Router>
   );
 }
 

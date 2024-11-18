@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.graph-section {
+  margin-top: 20px;
+  width:100%;
+}
