@@ -3,12 +3,12 @@ import './Home.css';
 
 const Home = () => {
   const links = [
-    { name: "Array Visualizer", path: "/array" },
-    { name: "Linkedlist Visualizer", path: "/linkedlist" },
-    { name: "Stack Visualizer", path: "/stack" },
-    { name: "Queue Visualizer", path: "/queue" },
-    { name: "Tree Visualizer", path: "/tree" },
-    { name: "Graph Visualizer", path: "/graph" },
+    { name: "Array Visualizer", path: "https://structlens.netlify.app/array" },
+    { name: "Linkedlist Visualizer", path: "https://structlens.netlify.app/linkedlist" },
+    { name: "Stack Visualizer", path: "https://structlens.netlify.app/stack" },
+    { name: "Queue Visualizer", path: "https://structlens.netlify.app/queue" },
+    { name: "Tree Visualizer", path: "https://structlens.netlify.app/tree" },
+    { name: "Graph Visualizer", path: "https://structlens.netlify.app/graph" },
   ];
 
   return (
